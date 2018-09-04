@@ -16,9 +16,14 @@ class Chatbot extends Component {
     }
     getReply() {
         var message = this.state.message;
-         const replies = [{ author: "bot", message: "hi", replyDate: new Date() },
-                             { author: "bot", message: "hello", replyDate: new Date() },
-                    { author: "bot", message: "hey", replyDate: new Date() }
+         const replies = [{ author: "bot", message: "hi may i help you", replyDate: new Date() },
+                             { author: "bot", message: "Good mormnig", replyDate: new Date() },
+                    { author: "bot", message: "good to see you", replyDate: new Date() },
+                    { author: "bot", message: "Sorry i can't understand", replyDate: new Date() },
+                    { author: "bot", message: "wow good to hear that", replyDate: new Date() },
+                    { author: "bot", message: "ehhh....", replyDate: new Date() },
+                    { author: "bot", message: "u can do that", replyDate: new Date() },
+                    { author: "bot", message: "I am bot", replyDate: new Date() }
                         ]
         
 
