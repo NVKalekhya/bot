@@ -8,7 +8,7 @@ app.use(bodyParser.jspn())
 app.use(express.static("public"));
 
 app.get("/",(req,res,next)=>{
- db.Reply.findone({},function(err,replies){
+ db.message.find({},function(err,replies){
      if(err)res.send({message:"failed to get reply"})
      res.send(replies);
  })

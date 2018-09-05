@@ -6,13 +6,15 @@ dotEnv.load();
 // mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://vamsi:vamsi@ds123770.mlab.com:23770/vamsi");
 
-var replySchema=mongoose.Schema({
-    message: String,
+// var replySchema=mongoose.Schema({
+//     message: String,
     
-})
+// })
 
-exports.Reply=mongoose.model('Reply',replySchema,'replies')
+// exports.Reply=mongoose.model('Reply',replySchema,'replies')
 var messageSchema=mongose.schema({
-    message:[]
+    message:String,
+    userName:String,
+    messageDate:Date,
 })
 exports.Message=mogose.model('Message',messageSchema,'messages')
